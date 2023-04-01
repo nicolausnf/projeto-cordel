@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+
+}
+
+:root{
+
+    --bg-color: #000000;
+    --bg-second-color: #fff;
+
+    --font-principal: 'Passion One', 'cursive';
+    --font-padrao: Verdana, Geneva, Tahoma, sans-serif;
+    --font-texto: 'Sriracha', 'cursive';
+
+}
+
+html, body{
+    min-height: 100vh;
+    background-color: darkgray;
+    
+}
+
+
+.header{
+    background-color: var(--bg-color);
+    color: var(--bg-second-color);
+    text-align: center;
+}
+
+.header h1{
+    padding-top: 50px;
+    font-family: var(--font-principal);
+    font-size: 4.3rem;
+    font-variant: small-caps;
+}
+
+.header p{
+    color: var(--bg-second-color);
+    padding-bottom: 50px;
+    font-family: var(--font-padrao);
+    
+}
+
+.header a{
+    color: var(--bg-second-color);
+    font-family: var(--font-padrao);
+    font-weight: bolder;
+    
+}
+
+.header span{
+    font-family: var(--font-padrao);
+}
+
+.header a:hover{
+    text-decoration: underline;
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+
+section.normal{
+    background-color: var(--bg-second-color);
+    color: var(--bg-color);
+}
+
+section.normal, .imagem p{
+    font-family: var(--font-texto);
+    font-size: 1.5rem;
+}
+
+section.normal p{
+    padding-bottom: 2em;
+}
+
+section.imagem{
+    background-color: rgb(58, 58, 58);
+    color: var(--bg-second-color);
+    box-shadow: inset 2px 2px 15px 0px rgba(0, 0, 0, 0.61);
+    background-attachment: fixed;
+    
+}
+
+section.imagem > p{
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.5);
+    line-height: 2em;
+    padding: 5px;
+    text-shadow: 1px 1px 0px var(--bg-color);
+}
+
+section#img01{
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+    background-size: cover;
+}
+
+section#img02{
+    background-image: url(../imagens/background002.jpg);
+    background-size: cover;
+}
+
+footer{
+    background-color: var(--bg-color);
+    color: var(--bg-second-color);
+    text-align: center;
+    padding: 10px;
+    font-family: var(--font-padrao);
+}
+
+footer a{
+    color: white;
+    font-weight: bold;
+}
+
+footer a:hover{
+    color: darkgray;
+    text-decoration: underline;
+}
